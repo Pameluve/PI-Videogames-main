@@ -1,0 +1,62 @@
+.backgroundHome{
+    background-image: url("../../media/Home.jpg");
+    background-attachment: fixed;   
+    background-size: cover;
+    background-position: center center;
+    width: auto;
+    height: 100%;
+}
+
+
+#buttonHome{
+    background-color: rgba(102, 0, 122, 70%);
+    padding: 12px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    
+    color: rgb(253, 251, 253);
+    font-weight: bold;
+    font-size: 17px;
+    text-shadow: 2px 2px 1px #0e1d5a;
+    font-family: Arial;
+    text-decoration: none;
+}
+
+#buttonHome:hover {
+    background-color: rgba(6, 0, 7, 0.7); 
+    box-shadow: 6px 5px 24px #666666;
+    transition-delay: 0.2s;
+    transition: 0.8s;
+}
+
+.filtrosHome{
+    padding: 12px;
+}
+
+.filtrosHome h3{
+    margin: auto;
+    padding-bottom: 5px;
+    color: rgb(61, 7, 61);
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 2px 2px 1px #acb3cf;
+    font-family: Arial;
+}
+
+.filtrosHome select{
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: Arial;
+    font-size: 15px;
+    border-radius: 10px;
+    border-color: rgba(102, 0, 122);
+}
+
+.card-container-home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: antiquewhite;
+}

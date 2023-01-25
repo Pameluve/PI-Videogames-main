@@ -1,0 +1,39 @@
+.backgroundLanding {
+    background: url("../../media/Landing.jpg");
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 45.4vw;
+    padding-top: 5px;
+}
+
+.backgroundLanding img{
+    width: 70%;
+    height: 120px;
+    margin-top: 90px;
+}
+
+#btnLanding{
+    border-radius: 28px;
+    border-style: none;
+    background-image: url("../../media/Button.jpg");
+    color: #fafafa;
+    opacity: 0.4;
+    cursor: pointer;
+    font-size: 30px;
+    margin-top: 170px;
+    text-shadow: 3px 2px 1px #9daef5;
+    font-family: Arial;
+    padding: 19px;
+    text-decoration: none;
+}
+
+#btnLanding:hover {
+    background-image: url("../../media/Button.jpg");
+    opacity: 1;
+    color: #ffffff;
+    box-shadow: 6px 5px 24px #666666;
+    transition-delay: 0.2s;
+    transition: 0.8s;
+}
+
