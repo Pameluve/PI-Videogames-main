@@ -1,4 +1,4 @@
-import { GET_VIDEOGAMES, CREATED_BY_FILTER, FILTER_BY_GENRES, ORDER_BY_NAME, ORDER_BY_RATING, GET_BY_NAME, GET_GENRES, POST_GAME, GET_DETAIL_BY_ID} from "./actions";
+import { GET_VIDEOGAMES, CREATED_BY_FILTER, FILTER_BY_GENRES, ORDER_BY_NAME, ORDER_BY_RATING, GET_BY_NAME, GET_GENRES, POST_GAME, GET_DETAIL_BY_ID, CLEAN_PAGE} from "./actions";
 
 const initialState = {
     videogames: [],
@@ -82,6 +82,11 @@ const rootReducer = (state = initialState, action)=>{
             return{
                 ...state,
                 videogames: ratingArray
+            }
+        case CLEAN_PAGE:
+            return{
+                ...state,
+                detail:[]
             }
         default:
             return state;

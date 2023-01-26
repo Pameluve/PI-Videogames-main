@@ -3,10 +3,7 @@
     background-attachment: fixed;   
     background-size: cover;
     background-position: center center;
-    width: auto;
-    height: 100%;
 }
-
 
 #buttonHome{
     background-color: rgba(102, 0, 122, 70%);
@@ -59,4 +56,11 @@
     flex-wrap: wrap;
     justify-content: space-around;
     color: antiquewhite;
+}
+
+.loading{
+    width: 400px;
+    height: 400px;
+    margin: 35px;
+    align-items: center;
 }

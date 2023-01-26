@@ -9,6 +9,7 @@ export const FILTER_BY_GENRES = "FILTER_BY_GENRES"
 export const ORDER_BY_NAME = "ORDER_BY_NAME"
 export const ORDER_BY_RATING = "ORDER_BY_RATING"
 export const POST_GAME = "POST_GAME "
+export const CLEAN_PAGE = "CLEAN_PAGE"
 
 //---------------------------GET-------------------------------
 export const getVideogames = ()=>{
@@ -74,4 +75,8 @@ export const orderByName = (payload)=>{
 
 export const orderByRating = (payload)=>{
     return{type: ORDER_BY_RATING , payload: payload}
+};
+
+export const cleanPage = ()=>{
+    return {type: CLEAN_PAGE}
 };
