@@ -1,9 +1,9 @@
 .detailBackground {
-    background: url("../../media/Detail.jpg");
+    background-image: url("../../media/Detail.jpg");
+    background-attachment: fixed;   
     background-size: cover;
     background-position: center center;
     width: 100%;
-    height: 45.4vw;
     padding-top: 5px;
 }
 
@@ -13,9 +13,9 @@
     justify-content: center center;
     align-items: center;
     width: 500px;
-    height: 650px;
+    height: 550px;
     margin-top: 50px;
-    margin-left: 500px;
+    margin-left: 400px;
     padding: 10px;
     border-radius: 20px;
     background-color: rgba(7, 4, 4, 60%);

@@ -16,7 +16,7 @@ const Detail = (props) => {
     return () => {
       dispatch(cleanPage());
     };
-  }, [dispatch]);
+  }, [dispatch, gameId]);
 
   return (
     <div className="detailBackground">
@@ -28,7 +28,7 @@ const Detail = (props) => {
         ) : (
           <img
             src={detail.image}
-            alt="image not found"
+            alt="not found"
             width="350px"
             height="200px"
           />

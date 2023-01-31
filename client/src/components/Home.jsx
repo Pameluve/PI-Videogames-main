@@ -28,7 +28,7 @@ const Home = () => {
   const paginado = (pageNumber) => setCurrentPage(pageNumber);
   //------------------------------------------------------------------
   const genres = useSelector((state) => state.genres);
-  const [order, setOrder] = useState("");
+  const [, setOrder] = useState("");
 
   useEffect(() => {
     dispatch(getGenres());

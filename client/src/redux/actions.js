@@ -14,7 +14,7 @@ export const CLEAN_PAGE = "CLEAN_PAGE"
 //---------------------------GET-------------------------------
 export const getVideogames = ()=>{
     return async (dispatch)=>{
-        const json = await axios.get("http://localhost:3001/videogames");
+        const json = await axios.get("/videogames");
         return dispatch({type: GET_VIDEOGAMES, payload: json.data});
     }
 };
@@ -22,7 +22,7 @@ export const getVideogames = ()=>{
 export const getByName = (name)=>{
     return async (dispatch)=>{
         try {
-            var json = await axios.get(`http://localhost:3001/videogames?name=${name}`);
+            var json = await axios.get(`/videogames?name=${name}`);
             return dispatch({type: GET_BY_NAME, payload: json.data})
         } catch (error) {
             return alert("Game not found")
@@ -33,7 +33,7 @@ export const getByName = (name)=>{
 export const getDetailById = (id)=>{
     return async (dispatch)=>{
         try {
-            const json = await axios.get(`http://localhost:3001/videogames/${id}`);
+            const json = await axios.get(`/videogames/${id}`);
             return dispatch({type: GET_DETAIL_BY_ID, payload: json.data})
         } catch (error) {
             console.log(error)
@@ -43,7 +43,7 @@ export const getDetailById = (id)=>{
 
 export const getGenres = ()=>{
     return async (dispatch)=>{
-        const json = await axios.get("http://localhost:3001/genres");
+        const json = await axios.get("/genres");
         return dispatch({type: GET_GENRES, payload: json.data})
     }
 };
@@ -52,7 +52,7 @@ export const getGenres = ()=>{
 //---------------------------POST-------------------------------
 export const postGame = (payload)=> async (dispatch)=>{ 
     try {
-        await axios.post("http://localhost:3001/videogames", payload);
+        await axios.post("/videogames", payload);
         return dispatch({type: POST_GAME});
     } catch (error) {
         return alert("Information missing");
